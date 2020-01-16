@@ -1,6 +1,6 @@
 ---
-
-
+layout: page
+title: Bookmarks
 ---
 1. YouTube.com Learn Linux https://www.youtube.com/watch?v=wBp0Rb-ZJak
 2. Hacker News: https://news.ycombinator.com/
