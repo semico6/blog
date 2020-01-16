@@ -5,7 +5,7 @@ permalink:           pretty
 
 # Setup
 title:               Seth Comire's Blog
-tagline:             'My brain-dump'
+tagline:             ''
 description:         'A repository for me to track everything I have learned (since starting this page).'
 url:                 https://semico6.github.io/blog/
 baseurl:             '/blog'
