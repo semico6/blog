@@ -3,8 +3,7 @@ layout: post
 title: Understanding Bash
 ---
 
-# Understanding Bash: Elements of Programming
-by Vladimir Likic on September 28, 2018
+Originally by Vladimir Likic on September 28, 2018
 
 Ever wondered why programming in Bash is so difficult? Bash employs the same constructs as traditional programming languages; however, under the hood, the logic is rather different.
 
