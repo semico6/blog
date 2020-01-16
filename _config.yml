@@ -7,15 +7,15 @@ permalink:           pretty
 title:               Seth Comire's Blog
 tagline:             'My brain-dump'
 description:         'A repository for me to track everything I have learned (since starting this page).'
-url:                 https://seth.comire.us
+url:                 https://semico6.github.io/blog/
 baseurl:             '/blog'
 paginate:            5
 
 # About/contact
 author:
   name:              Seth Comire
-  url:               https://twitter.com/semico6
-  email:             seth@comire.us
+  url:               https://twitter.com/nemophilist345
+  email:             nemophilist345@protonmail.com
 
 # Custom vars
 version:             1.0.0
