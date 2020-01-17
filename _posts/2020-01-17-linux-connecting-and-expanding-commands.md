@@ -2,6 +2,7 @@
 layout: post
 title: Linux Connecting and Expanding Commands
 ---
+# Linux: Connecting and Expanding Commands
 
 You can redirect the input and output of commands in the shell to and from other commands and files. To allow 
 commands to be strung together, the shell sues metacharacters. A *metacharacter* is a typed character that has special
@@ -46,4 +47,4 @@ The following is an example of a command being run in the background.
 Just don't close the shell until the process is completed, or that kills the process!!!
 
 ## Expanding commands
-With command substitution, you can have the output of a command interpreted by the shell instead of by th ecommand itself. In this way, you can have the standard output of a command become an argument for another command. The two forms of command substitution are ```$(command)``` and ``` `command` ```(backticks, not single quotes).
+With command substitution, you can have the output of a command interpreted by the shell instead of by the command itself. In this way, you can have the standard output of a command become an argument for another command. The two forms of command substitution are ```$(command)``` and ``` `command` ```(backticks, not single quotes).
