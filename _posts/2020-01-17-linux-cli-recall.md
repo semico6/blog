@@ -54,3 +54,4 @@ Alt+N | Forward Search | This is the same as the preceding function but for forw
 You can also work with your history list by using the ```fc``` command. type **fc** followed by a history line number, and that command line is opened in a text editor (vi by default). Make the changes you want, save and exit the text editor, and the command runs.
 You can also give a range of lines you wish ```fc``` to run, such as ```fc 100 105```.
 After you close your shell, the history list is stored in the ```.bash_history``` file in your home directory. Up to 1,000 history commands are stored for you by default.
+-----------------------------------------------------------------------------------------------------
