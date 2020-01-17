@@ -1,5 +1,5 @@
 ---
-format: post
+layout: post
 title: Linux: Connecting and Expanding Commands
 ---
 
