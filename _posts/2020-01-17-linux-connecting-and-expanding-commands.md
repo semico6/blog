@@ -13,6 +13,37 @@ less than sign (<), and greater than sign (>).
 ## Piping between commands
 The pipe (|) metacharacter connects the output from one command to the input of another command. This lets you have one
 command work on some data and then have the next command deal with the results. For example,
+
 <pre>
 $ <b>cat /etcpasswd | sort | less</b>
 </pre>
+
+This command lists the contents of the ```/etc/passwd``` file and pipes the output to the ```sort``` command. The ```sort```
+command takes the usernames that begin each line of the ```/etc/passwd``` file, sorts them alphabetically, and pipes the output to the ```less``` command (to page through the output).
+
+## Sequential commands
+Sometimes you may want a sequence of commands to run, with one command completing before the next command begins. You can do this by typing several commands on the same command line and separating them with semicolons (;):
+
+<pre>
+$ <b>date ; troff -me verylargedocument | 1pr ; date</b>
+</pre>
+
+This example formats a huge document and tells you how long it would take. the first command (```date```) showed the date and time before the formatting started. The ```troff``` command formatted the document, then piped the output to the printer. When the formatting was finished, the date and time were printed again.
+
+Another useful command to add to the end of a long command line is ```mail```. You can add the following to the end of a command line.
+
+<pre><b>; mail -s "Finished the long command" chris@example.com</b></pre>
+
+Then, for example, a mail mail message is sent to the user you choose after the command completes.
+
+## Background commands
+Some commands can take a while to complete. You can have the commands run in the background by using the ampersand (&).
+Text formatting commands (such as ```nroff``` and ```troff```) are examples of commands that are often run in the background to format a large document. You might want to create your own shell scripts that run in the background to check continuously for certain events to occur, such as the hard disk filling up or particular users logging in.
+The following is an example of a command being run in the background.
+
+<pre>$ <b>troff -me verylargedocument | lpr &</b></pre>
+
+Just don't close the shell until the process is completed, or that kills the process!!!
+
+## Expanding commands
+With command substitution, you can have the output of a command interpreted by the shell instead of by th ecommand itself. In this way, you can have the standard output of a command become an argument for another command. The two forms of command substitution are ```$(command)``` and ``` `command` ```(backticks, not single quotes).
