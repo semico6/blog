@@ -33,7 +33,11 @@ Alt+Y | Paste earlier text | Rotate back to previously cut text and paste it
 Ctrl+C | Delete whole line | Delete the entire line
 
 ## Command-line completion
+
 **Command, alias, or function:** If the text you type begins with regular characters, the shell tries to complete the text with a command, alias, or function name.
+
 **Variable:** If the text you type begins with a dollar sign ($), the shell completes the text with a variable from the current shell.
+
 **Username:** If the text you type begins with a tilde (~), the shell completes the text with a username. As a result, *~username* indicates the home directory of the named user.
+
 **Hostname:** If the text you type begins with the at symbol (@), the shell completes the text with a hostname taken from the */etc/hosts* file.
