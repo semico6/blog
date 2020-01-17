@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux: Connecting and Expanding Commands
+title: Linux Connecting and Expanding Commands
 ---
 
 You can redirect the input and output of commands in the shell to and from other commands and files. To allow 
