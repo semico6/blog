@@ -47,4 +47,31 @@ The following is an example of a command being run in the background.
 Just don't close the shell until the process is completed, or that kills the process!!!
 
 ## Expanding commands
-With command substitution, you can have the output of a command interpreted by the shell instead of by the command itself. In this way, you can have the standard output of a command become an argument for another command. The two forms of command substitution are ```$(command)``` and ``` `command` ```(backticks, not single quotes).
+With command substitution, you can have the output of a command interpreted by the shell instead of by the command itself. In this way, you can have the standard output of a command become an argument for another command. The two forms of command substitution are `$(command)` and `` `command` ``(backticks, not single quotes). The command can include options, metacharacters, and arguments. 
+
+<pre>$ <b>vi $(find /home | grep xyzzy)</b></pre>
+
+This command substitution is dome before the `vi` command is run. First, the `find` command starts at the `/home` directory and prints out all files and directories below that point in the filesystem. The output is piped t othe `grep` command, which filters out all files except for those that include the string `xyzzy` in the filename. Finally, the `vi` command opens all filenaes for editing (one at a time) that include xyzzy.
+
+## Expanding arithmetic expressions
+You can pass arithmetic results to a command. There are two forms you can use to expand an arithmetic expression and pass it to the shell: `$[expression]` or `$(expression)`. 
+
+<pre>
+$ <b>echo "I am $[2015 - 1957] years old."</b>
+I am 58 years old.
+</pre>
+
+<pre>
+$ <b>echo "There are $(ls | wc -w) files in this directory."</b>
+There are 14 files in this directory.
+</pre>
+
+## Expanding Variables
+Variables that store information within the shell can be expanded using the dollar sign ($) metacharacter. When you expand an environment variable on a command line, the value of the variable is printed instead of the variable name itself. 
+
+<pre>
+$ <b>ls -l $BASH</b>
+-rwxr-xr-x 1 root  root  1012808 Oct  8 08:53 /bin/bash
+</pre>
+
+Using `$BASH` as an argument to `ls -l` causes a long listing of the bash command to be printed.
