@@ -74,3 +74,4 @@ $ <b>ls -l $BASH</b>
 </pre>
 
 Using `$BASH` as an argument to `ls -l` causes a long listing of the bash command to be printed.
+------------------------------------------------------------------------------------------------------------
