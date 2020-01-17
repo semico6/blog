@@ -30,7 +30,7 @@ Ctrl+W | cut previous word | Cut the word located behind the cursor
 Alt+D | Cut next word | cut the word following the cursor
 Ctrl+Y | Paste recent text | Past most recently cut text
 Alt+Y | Paste earlier text | Rotate back to previously cut text and paste it
-Ctrl+C | Delete whole line | Delete the entier line
+Ctrl+C | Delete whole line | Delete the entire line
 
 ## Command-line completion
 **Command, alias, or function:** If the text you type begins with regular characters, the shell tries to complete the text with a command, alias, or function name.
