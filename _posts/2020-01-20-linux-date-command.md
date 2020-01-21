@@ -146,9 +146,9 @@ There are a few optional formats you can choose.
 - Display the day of the year
   - `$ date +%j` will display `020`
 - Use the date command within a script or report
-  - <pre><code>`$ echo "The date is" `date +%A` "generated at" `date +%T`</code></pre> will display <pre><code>The date is Monday generated at 16:46:35</code></pre>
+  - <pre><code>$ echo "The date is" `date +%A` "generated at" `date +%T`</code></pre> will display <pre><code>The date is Monday generated at 16:46:35</code></pre>
 - Set a custom default format for the date command
   - `$ sudo nano ./.bashrc` to edit `date` for all users, arrow down to the alias's section, and add `alias date='date "+%A, %B %d %Y %I:%M%P %Z"'` above the `fi` (or any format you prefer)
   - to apply the change, type `source ~/.bashrc`, then try running the `$ date` command again. The result will display: `Monday, January 20 2020 05:06pm EST`
 
-Link to Sierra-method learning questions: 
+Link to Sierra-method learning questions: https://github.com/semico6/blog/blob/gh-pages/Sierra-method-learning/linux-date.md
