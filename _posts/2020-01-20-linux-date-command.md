@@ -151,4 +151,4 @@ There are a few optional formats you can choose.
   - `$ sudo nano ./.bashrc` to edit `date` for all users, arrow down to the alias's section, and add `alias date='date "+%A, %B %d %Y %I:%M%P %Z"'` above the `fi` (or any format you prefer)
   - to apply the change, type `source ~/.bashrc`, then try running the `$ date` command again. The result will display: `Monday, January 20 2020 05:06pm EST`
 
-Link to Sierra-method learning questions: https://github.com/semico6/blog/blob/gh-pages/Sierra-method-learning/linux-date.md
+Link to Sierra-method learning questions: [here](https://github.com/semico6/blog/blob/gh-pages/Sierra-method-learning/linux-date.md)
